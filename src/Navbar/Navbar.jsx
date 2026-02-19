@@ -8,7 +8,7 @@ function MassiveNavbar() {
   const [show, setShow] = useState(false);
 
   return (
-    <Navbar expand="lg" className="custom-navbar">
+    <Navbar expand="md" className="custom-navbar">
       <Container>
         <Navbar.Brand as={NavLink} to="/">
           <img src={logo} alt="Massive Infratech" className="navbar-logo" />
