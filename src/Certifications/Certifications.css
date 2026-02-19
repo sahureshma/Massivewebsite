@@ -1,0 +1,224 @@
+.certifications-section {
+  background: #f4f4f4;
+  padding-bottom: 20px;
+}
+
+/* Header */
+.cert-header {
+  background: #1f73c9;
+  padding: 80px 0 120px 0;
+  position: relative;
+  text-align: center;
+  color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+}
+
+.cert-header h1 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.cert-header span {
+  color: #f6c748;
+  border-bottom: 3px solid #f6c748;
+  padding-bottom: 5px;
+}
+
+/* Yellow Info Pill */
+.info-pill {
+  background: #f6c748;
+  padding: 20px 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  margin-top: 40px;
+  font-weight: 500;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.info-pill span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Cards */
+.cert-card {
+  border: none;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(207, 199, 199, 0.9);
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.cert-card::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background-color: #f6c748;
+}
+
+.cert-card .card-body {
+  padding: 25px;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #1B263B;
+}
+
+.card-title h5 {
+  margin: 0;
+  font-weight: 700;
+  color: #1B263B;
+  font-size: 16px;
+}
+
+.card-title h6 {
+  margin: 0;
+  font-weight: 700;
+  color: #1B263B;
+  font-size: 16px;
+}
+
+.cert-card p {
+  margin-top: 10px;
+  color: #474747;
+  font-size: 15px;
+}
+
+
+
+
+.official-section {
+  background: #f5f5f5;
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Heading */
+.official-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.official-heading h2 {
+  font-weight: 700;
+  color: #1E0255;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.official-heading .line {
+  width: 80px;
+  height: 3px;
+  background-color: #f6c748;
+}
+
+.doc-card {
+  height: 280px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 10px;
+}
+
+.doc-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.official-text {
+  margin-top: 50px;
+}
+
+.official-text p {
+  font-size: 16px;
+  color: #000;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+@media (max-width: 576px) {
+
+  .official-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .official-heading .line {
+    width: 290px;
+  }
+
+  .doc-card img {
+    height: 180px;
+  }
+
+  .official-text p {
+    font-size: 14px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+
+  .cert-header {
+    padding: 60px 0 100px 0;
+  }
+
+  .cert-header h1 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .info-pill {
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+  .info-pill span {
+    font-size: 14px;
+  }
+
+  .cert-card .card-body {
+    padding: 18px;
+  }
+
+  .card-title {
+    gap: 10px;
+  }
+
+  .card-title h5 {
+    font-size: 12px;
+  }
+
+  .card-title h6 {
+    font-size: 14px;
+  }
+
+  .cert-card p {
+    font-size: 13px;
+  }
+}
